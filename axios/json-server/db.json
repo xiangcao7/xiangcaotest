@@ -1,0 +1,29 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "tittle": "json-server",
+      "author": "typicode"
+    },
+    {
+      "tittle": "我是狗",
+      "author": "大爷",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postID": 1
+    },
+    {
+      "body": "我是猪",
+      "postID": 2,
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

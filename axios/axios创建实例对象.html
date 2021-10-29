@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="page-header">基本使用</h2>
+        <button class="btn btn-primary">发送GET请求</button>
+        <button class="btn btn-warning">发送POST请求</button>
+    </div>
+    <script>
+        const btns = document.querySelectorAll("button");
+        const duanzi = axios.create({//axios默认配置 发送给不同域名的请求 可以通过生成多个axios对象来设置默认url 做到一一对应
+            baseURL:"https://api.apiopen.top",
+            timeout:2000//超时报错
+        })
+        duanzi({
+            url:"/getJoke"
+        }).then(response => {
+            console.log(response);
+        })
+    </script>
+</body>
+</html>
