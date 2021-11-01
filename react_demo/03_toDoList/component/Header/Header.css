@@ -1,0 +1,7 @@
+.header input{
+    border: 1px solid #326db1;
+    padding: 2px;
+    font-size: 0.6em;
+    color: #444;
+    width: 200px;
+}
